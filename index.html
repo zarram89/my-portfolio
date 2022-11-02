@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevJane Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Главная</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">Навыки</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">Обо мне</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">Мои работы</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Добро пожаловать! <strong>Рамиль Зарипов</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Frontend-разработчик</p>
+        <img src="img/avatar.png" alt="a picture of Jane Smith smiling" class="intro__img">
+    </section>
+
+
+    <!-- My services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">Навыки</h2>
+        <div class="services">
+            <div class="service">
+                <h3>HTML & CSS</h3>
+                <p>
+                    Семантическая доступная кроссбраузерная вёрстка. Построение адаптивных сеток на FlexBox и Grid.
+                    Вёрстка страницы по макету. Оформление текста и декоративных элементов. Оптимизация кода.
+                    Автоматизация сборки проекта. Вёрстка по методологии БЭМ. Использование препроцессоров.
+                </p>
+            </div> <!-- / service -->
+
+            <div class="service">
+                <h3>JavaScript</h3>
+                <p>DOM — умение управлять разметкой и оживлять страницу. ESLint — придерживаться принятого стиля
+                    кодирования. Node.js и npm — подключать сторонние пакеты. Node.js и browsersync — локальный сервер
+                    для разработки. ECMAScript-модули — разделение кода на модули. HTTP, FetchAPI, Promise, JSON —
+                    работа с синхронным кодом. Создание и валидация форм. Работа со сторонними библиотеками и
+                    интерактивными картами. Devtools — работа с кодом из браузера, анализ кода.</p>
+            </div> <!-- / service -->
+
+            <div class="service">
+                <h3>React</h3>
+                <p>React-components, props & state, React Hooks: useState & useEffect</p>
+            </div> <!-- / service -->
+        </div> <!-- / services -->
+
+        <a href="#work" class="btn">Мои работы</a>
+    </section>
+
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Обо мне</h2>
+        <p class="section__subtitle section__subtitle--about">Frontend-разработчик, Челябинск</p>
+
+        <div class="about-me__body">
+            <p>Я начинающий Frontend-разработчик. Работаю с Git, HTML, CSS, JavaScript (ES6+), React, Adobe
+                Photoshop, Adobe XD, Figma. Ежедневно изучаю возможности языка JavaScript и библиотеки React на ресурсах
+                HTMLAcademy.ru, Scrimba.com, freeCodeCamp.com. Могу работать самостоятельно и искать информацию в
+                документации, на Stackoverflow и тематических форумах и чатах. Умею работать в коллективе и хочу
+                профессионально развиваться.</p>
+            <p>Нахожусь в поиске карьерного старта в IT в Челябинске.</p>
+        </div>
+
+        <img src="img/avatar-big.png" alt="Jane leaning against a bus" class="about-me__img">
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">Мои работы</h2>
+        <p class="section__subtitle section__subtitle--work">Cтраницы моих работ и их репозитории
+        </p>
+
+        <div class="portfolio">
+            <!-- Portfolio item 01 -->
+            <a href="portfolio-item-tenzi.html">
+                <img src="img/tenzi.png" alt="Скришот игры Tenzi" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 02 -->
+            <a href="portfolio-item-memgen.html" class="portfolio__item">
+                <img src="img/memgen.png" alt="Скриншот генератора мемов" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 03 -->
+            <a href="portfolio-item-airbnb.html" class="portfolio__item">
+                <img src="img/airbnb.png" alt="Скриншот клона airbnb" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 04 -->
+            <a href="portfolio-item-travel.html" class="portfolio__item">
+                <img src="img/traveljorney.png" alt="Скриншот сайта путешествий" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 05 -->
+            <a href="portfolio-item-barbershop.html" class="portfolio__item">
+                <img src="img/barber.png" alt="Скриншот сайта барбершопа" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 06 -->
+            <a href="portfolio-item-nerds.html" class="portfolio__item">
+                <img src="img/nerd.png" alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 06 -->
+            <a href="portfolio-item-sophie.html" class="portfolio__item">
+                <img src="img/sophie.png" alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 07 -->
+            <!-- <a href="portfolio-item.html" class="portfolio__item">
+                <img src="img/portfolio.jpg" alt="" class="portfolio__img">
+            </a> -->
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:zarram89@gmail.com" class="footer__link">zarram89@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://vk.com/id367953674">
+                    <i class="fab fa-vk"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/zarram89">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
